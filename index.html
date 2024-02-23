@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item mx-2">
-                    <a class="nav-link active" href="#">Operadores</a>
+                    <a class="nav-link active" href="index.html">Operadores</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link active" href="#">Features</a>
+                    <a class="nav-link active" href="grados.html">Grados</a>
                   </li>
                   <li class="nav-item mx-2">
                     <a class="nav-link active" href="#">Pricing</a>
@@ -32,11 +32,66 @@
               </div>
             </div>
           </nav>
-        <main>
+        <main class="container">
+            
+            <section id="operadores" class="bg-secondary-subtle my-5 container">
+
+                <form>
+                    <fieldset>
+                      <legend>Operaciones matemáticas</legend>
+                      <div class="mb-3 text-center">
+                        <label class="form-label">Primer número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <label class="form-label">Primer número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
+                      </div>
+                      <div class="h-25">
+                        <div class="mb-3 text-center">
+                            <label class="form-label">Resultado</label>
+                            <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..." disabled>
+                        </div>
+                      </div>
+                      <div class="mb-3 w-25">
+                        <label for="disabledSelect" class="form-label">Selecciona el operador</label>
+                        <select class="form-select">
+                          <option>Suma</option>
+                          <option>Resta</option>
+                          <option>Multiplicación</option>
+                          <option>División</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
+                  </form>
+
+            </section>
+
+            <section id="grados" class="bg-warning-subtle"> 
+                <form>
+                    <fieldset>
+                      <legend>Operaciones matemáticas</legend>
+                      <div class="mb-3 text-center">
+                        <label class="form-label">Primer número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
+                      </div>
+                      <div class="mb-3 text-center">
+                        <label class="form-label">Primer número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
+                      </div>
+                      <div class="h-25">
+                        <div class="mb-3 text-center">
+                            <label class="form-label">Resultado</label>
+                            <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..." disabled>
+                        </div>
+                      </div>
+            </section>
+
             
 
 
-            
+
 
         </main>
         
