@@ -1,113 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
-    <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
 
-        <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand ms-5" href="#">Desafío</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+
+    <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">Desafío</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item mx-2">
-                    <a class="nav-link active" href="index.html">Operadores</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link active" href="grados.html">Grados</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link active" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link active" href="#">Disabled</a>
-                  </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#operadores">Operadores</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#grados">Grados</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#">Disabled</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-        <main class="container">
-            
-            <section id="operadores" class="bg-secondary-subtle my-5 container">
+        </div>
+    </nav>
+    <main class="container">
 
-                <form>
-                    <fieldset>
-                      <legend>Operaciones matemáticas</legend>
-                      <div class="mb-3 text-center">
+        <section id="operadores" class="bg-secondary-subtle my-5 container">
+
+            <form>
+                <fieldset>
+                    <legend>Operaciones matemáticas</legend>
+                    <div class="mb-3 text-center">
                         <label class="form-label">Primer número</label>
-                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
-                      </div>
-                      <div class="mb-3 text-center">
-                        <label class="form-label">Primer número</label>
-                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
-                      </div>
-                      <div class="h-25">
-                        <div class="mb-3 text-center">
-                            <label class="form-label">Resultado</label>
-                            <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..." disabled>
-                        </div>
-                      </div>
-                      <div class="mb-3 w-25">
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Segundo número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Resultado</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..."
+                            disabled>
+                    </div>
+                    <div class="mb-3 text-end">
                         <label for="disabledSelect" class="form-label">Selecciona el operador</label>
-                        <select class="form-select">
-                          <option>Suma</option>
-                          <option>Resta</option>
-                          <option>Multiplicación</option>
-                          <option>División</option>
-                        </select>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </fieldset>
-                  </form>
-
-            </section>
-
-            <section id="grados" class="bg-warning-subtle"> 
-                <form>
-                    <fieldset>
-                      <legend>Operaciones matemáticas</legend>
-                      <div class="mb-3 text-center">
-                        <label class="form-label">Primer número</label>
-                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
-                      </div>
-                      <div class="mb-3 text-center">
-                        <label class="form-label">Primer número</label>
-                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="ingresa un número">
-                      </div>
-                      <div class="h-25">
-                        <div class="mb-3 text-center">
-                            <label class="form-label">Resultado</label>
-                            <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..." disabled>
+                        <div class="ms-auto d-flex">
+                            <select class="form-select w-25 ms-auto" placeholder="2">
+                                <option>Suma</option>
+                                <option>Resta</option>
+                                <option>Multiplicación</option>
+                                <option>División</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary">Calcular</button>
                         </div>
-                      </div>
-            </section>
+                    </div>
+                </fieldset>
+            </form>
 
-            
+        </section>
+
+        <section id="grados" class="bg-warning-subtle my-5 container">
+            <form>
+                <fieldset>
+                    <legend>Celsius a Kelvin-Fahrenheit</legend>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Grados Celsius</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa los grados °C">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Grados Kelvin</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="..." disabled>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Grados Fahrenheit</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..." disabled>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Convertir</button>
+                    </div>
+        </section>
+
+
+        <section id="calculos" class="bg-info-subtle my-5 container">
+            <form>
+                <fieldset>
+                    <legend>Cálculos</legend>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Primer número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Segundo número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Tercer número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Cuarto número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">Quinto número</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto"
+                            placeholder="ingresa un número">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">La suma de los 5 números</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto" placeholder="..." disabled>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <label class="form-label">El promedio de los 5 números</label>
+                        <input type="text" class="form-control w-25 text-center mx-auto disabled" placeholder="..." disabled>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Calcular</button>
+                    </div>
+        </section>
+
+
+
+    </main>
 
 
 
 
-        </main>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>
